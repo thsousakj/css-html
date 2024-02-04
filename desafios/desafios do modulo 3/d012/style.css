@@ -31,9 +31,9 @@ header > p {
 
 article > p {
     font-family: 'Indie Flower', cursive;
+    font-size: 3em;
     text-align: justify;
-    text-indent: 30px;
-    margin: 15px 0px;
+    margin: 0px 0px;
 }
 
 strong {
