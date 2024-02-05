@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rubik+Mono+One&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: #8438C2;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: 'Rubik Mono One', monospace;
+    color: white;
+    padding-top: 50px;
+    font-size: 4em;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+
+header > p {
+    color: white;
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: #8F3CD2;
+    color: white;
+}
+
+section.imagem {
+    background-color:#7b34b5;
+    color: white;
+}
+
+section.imagem > p {
+    background-color: #34164e;
+    width: 400px;
+}
+
+strong {
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center
+}
