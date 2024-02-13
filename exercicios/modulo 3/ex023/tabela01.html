@@ -11,20 +11,19 @@
 
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
-        }
-
-        tr.linha {
-            background-color: blue;
         }
 
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center;/*alinhamento horizontal*/
+            vertical-align: top;/*alinhamento vertical*/
         }
 
-        td.dado {
-            background-color: yellow;
+        .numero {
+            text-align: right;
         }
 
     </style>
@@ -33,11 +32,11 @@
     <h1>minha primeira tabela</h1>
     <table>
         <tr> <!--primeira linha-->
-            <td>a1</td>
+            <td class="numero">a1</td>
             <td>b1</td>
             <td>c1</td>
         </tr>
-        <tr class="linha"> <!--segunda linha-->
+        <tr> <!--segunda linha-->
             <td>a2</td>
             <td>b2</td>
             <td>c2</td>
@@ -49,7 +48,7 @@
         </tr>
         <tr> <!-- Quarta Linha -->
             <td>a4</td>
-            <td class="dado">b4</td>
+            <td>b4</td>
             <td>c4</td>
         </tr>
     </table>
