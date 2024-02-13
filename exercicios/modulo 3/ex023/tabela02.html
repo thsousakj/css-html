@@ -22,13 +22,27 @@
             box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.765);
         }
 
+        caption {
+            text-align: center;
+            font-size: 1.5em;
+            padding: 5px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            color: black;
+            background-color: gray;
+        }
+
         td, th {
             border: 1px solid black;
             text-align: center;
             padding: 5px;
         }
 
-        .num {
+        tbody > tr:nth-child(odd) { /*odd ou even, ou tambem 2n-1 para odd e 2n para even*/
+            background-color: lightgray;
+        }
+
+        td.num {
             text-align: right;
         }
 
@@ -40,12 +54,13 @@
     </style>
 </head>
 <body>
-    <h1>Os 10 Maiores Estados do Brasil</h1>
+    <h1>Uso das tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -92,7 +107,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">156,493,845</td>
             </tr>
         </tfoot>
@@ -102,6 +117,7 @@
 
 <!--
     ANATOMIA PARA TABELAS GRANDES
+    CAPTION
     TABLE
         THEAD
             TR,TD,TH
