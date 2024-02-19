@@ -16,6 +16,7 @@
 
         table {
             width: 500px;
+            position: relative;
             border-collapse: collapse;
             margin-left: 32%;
             margin-top: 4%;
@@ -36,6 +37,12 @@
             border: 1px solid black;
             text-align: center;
             padding: 5px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         tbody > tr:nth-child(odd) { /*odd ou even, ou tambem 2n-1 para odd e 2n para even*/
