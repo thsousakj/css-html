@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+        <label for="iusu">Iusuario: </label>
+        <input type="text" value="iusu" required minlength="4" maxlength="10" placeholder="Nome">
+        </p>
+
+        <p>
+            <label for="inum">Nota:</label>
+            <input type="number" name="inum" id="inum" required step="0.1" minlength="0" maxlength="10" placeholder="0 a 10">
+        </p>
+
+        <p>
+            <label for="mes">Período Letivo:</label>
+            <input type="month" name="imes" id="imes" required>
+        </p>
+
+        <p>
+            <label for="dia">Dia de tal e tal:</label>
+            <input type="date" name="idia" id="idia" required>
+        </p>
+
+        <p>
+            <label for="time">Hora de tal e tal:</label>
+            <input type="time" name="ihora" id="ihora" required>
+        </p>
+
+        <p><input type="submit" value="Enviar"></p>
+        <p><input type="reset" value="Limpar"></p>
+    </form>
+</body>
+</html>
