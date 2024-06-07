@@ -1,1 +1,22 @@
 @charset "UTF-8";
+
+body {
+    background-color: rgb(74, 5, 74);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 0px rgb(163, 6, 163);
+    padding: 10px;
+}
+
+footer>p#m2 {
+    color: white;
+    text-align: top right;
+    padding: 10px;
+}
+
+footer>p#m1 {
+    color: rgb(74, 5, 74);
+    
+}
